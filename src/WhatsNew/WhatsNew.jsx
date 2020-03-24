@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Baz = (props) => {
+const WhatsNew = (props) => {
     return (
         <div>
-            The baz page
+            The WhatsNew page
             
             <article>
             <h1>{props.content.title}</h1>
@@ -14,4 +14,4 @@ const Baz = (props) => {
     )
 }
 
-export default Baz
+export default WhatsNew

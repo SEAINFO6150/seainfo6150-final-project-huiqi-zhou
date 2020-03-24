@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
+import EditorSelect from "./EditorSelect/EditorSelect.jsx";
 import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
+import WhatsNew from "./WhatsNew/WhatsNew.jsx";
 import Error from "./Error/Error.jsx";
 
 // here is some external content. look at the /baz route below
@@ -27,13 +27,13 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/foo">Foo</Link>
+              <Link to="/EditorSelect">EditorSelect</Link>
             </li>
             <li>
               <Link to="/bar/hats/sombrero">Bar</Link>
             </li>
             <li>
-              <Link to="/baz">Baz</Link>
+              <Link to="/WhatsNew">WhatsNew</Link>
             </li>
           </ul>
         </nav>
@@ -42,7 +42,7 @@ function App() {
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
+        <Route path="/EditorSelect" exact component={EditorSelect} />
         {/* passing parameters via a route path */}
         <Route
           path="/bar/:categoryId/:productId"
@@ -57,9 +57,9 @@ function App() {
           )}
         />
         <Route
-          path="/baz"
+          path="/WhatsNew"
           exact
-          render={() => <Baz content={externalContent} />}
+          render={() => <WhatsNew content={externalContent} />}
         />
         <Route component={Error} />
       </Switch>
