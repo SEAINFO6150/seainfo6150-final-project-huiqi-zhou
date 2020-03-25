@@ -18,52 +18,7 @@ const externalContent = {
 
 function App() {
   return (
-    <Router>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/EditorSelect">EditorSelect</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/WhatsNew">WhatsNew</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/EditorSelect" exact component={EditorSelect} />
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/WhatsNew"
-          exact
-          render={() => <WhatsNew content={externalContent} />}
-        />
-        <Route component={Error} />
-      </Switch>
-    </Router>
+    <Home/>
   );
 }
 

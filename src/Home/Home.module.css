@@ -4,8 +4,21 @@
     text-align: center;
 }
 
-.grid {
+.productgrid{
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-gap: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.infogrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+
 }

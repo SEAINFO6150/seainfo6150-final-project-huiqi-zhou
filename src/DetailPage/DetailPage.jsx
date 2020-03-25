@@ -1,13 +1,9 @@
 import React from 'react'
 
-const DetailPage = ({imageLink, imageAlt, productName, price, styleDetail}) => {
+const DetailPage = () => {
     return (
         <div>
-            <img src={imageLink} alt={imageAlt} />
-            <h6>{productName}</h6>
-            <p>{price}</p>
-            <button>Checkout</button>
-            <p>{styleDetail}</p>
+            This is detail page
         </div>
     )
 }
