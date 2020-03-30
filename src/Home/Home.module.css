@@ -13,6 +13,10 @@
     justify-items: center;
 }
 
+.griditem{
+    text-align: center;
+}
+
 .infogrid{
     display: grid;
     grid-template-columns: auto auto;
