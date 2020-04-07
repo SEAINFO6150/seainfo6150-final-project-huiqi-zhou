@@ -4,12 +4,10 @@
     text-align: center;
 }
 
-.productgrid{
+.articlegrid{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 50px;
+    grid-template-columns: auto auto;
     padding: 40px;
-    align-items: center;
     justify-items: center;
 }
 

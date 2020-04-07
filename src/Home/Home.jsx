@@ -1,5 +1,4 @@
-import React from 'react'
-import Form from "../Form/Form";
+import React from 'react';
 import ProductInformation from "./ProductInformation.jsx";
 import CustomerService from "./CustomerService.jsx";
 import HShop from "./HShop.jsx"
@@ -9,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <h1 className={style.title}>H'Shop</h1>
-            <p>new clothing editor</p>
+            
             <hr/>
             <div className={style.productgrid}>
             <ProductInformation  imageLink="/images/blueblazer.jpg" imageAlt="blue blazer" productName="Blue Blazer" price="$100"/>
