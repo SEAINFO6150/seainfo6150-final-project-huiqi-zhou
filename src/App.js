@@ -11,6 +11,7 @@ import WebsiteInfoPage from "./WebsiteInfoPage/WebsiteInfoPage.jsx"
 import ReturnPolicyInfo from "./WebsiteInfoPage/ReturnPolicyInfo.jsx"
 import ContactUsInfo from "./WebsiteInfoPage/ContactUsInfo.jsx"
 import AboutUsInfo from "./WebsiteInfoPage/AboutUsInfo.jsx"
+import Checkout from "./Checkout/Checkout.jsx"
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -84,6 +85,7 @@ function App() {
         <Route path="/ReturnPolicyInfo" exact component={ReturnPolicyInfo} />
         <Route path="/ContactUsInfo" exact component={ContactUsInfo} />
         <Route path="/AboutUsInfo" exact component={AboutUsInfo} />
+        <Route path="/Checkout" exact component={Checkout} />
         <Route component={Error} />
         
       </Switch>

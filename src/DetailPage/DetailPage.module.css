@@ -1,0 +1,26 @@
+.title {
+    font-size: 8em;
+    color: black;
+    text-align: center;
+}
+
+.articlegrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    justify-items: center;
+}
+
+.griditem{
+    text-align: match;
+}
+
+.infogrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+
+}

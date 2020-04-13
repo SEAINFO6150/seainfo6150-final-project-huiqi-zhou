@@ -1,0 +1,30 @@
+{
+    "Item1": {
+      "productName": "Blueblazer",
+      "category": "clothing",
+      "text": "this is a blazer",
+      "price": "100",
+      "image": {
+        "_url": "/images/blueblazer.jpg"
+      }
+    },
+    "Item2": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      },
+      "Item3": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      }
+    
+  }
