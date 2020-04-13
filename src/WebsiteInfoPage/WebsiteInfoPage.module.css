@@ -1,0 +1,9 @@
+.infogrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+
+}

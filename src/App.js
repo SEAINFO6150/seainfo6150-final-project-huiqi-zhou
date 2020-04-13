@@ -6,6 +6,11 @@ import EditorSelect from "./EditorSelect/EditorSelect.jsx";
 import Bar from "./Bar/Bar.jsx";
 import WhatsNew from "./WhatsNew/WhatsNew.jsx";
 import Error from "./Error/Error.jsx";
+import DetailPage from "./DetailPage/DetailPage.jsx";
+import WebsiteInfoPage from "./WebsiteInfoPage/WebsiteInfoPage.jsx"
+import ReturnPolicyInfo from "./WebsiteInfoPage/ReturnPolicyInfo.jsx"
+import ContactUsInfo from "./WebsiteInfoPage/ContactUsInfo.jsx"
+import AboutUsInfo from "./WebsiteInfoPage/AboutUsInfo.jsx"
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -35,6 +40,9 @@ function App() {
             <li>
               <Link to="/WhatsNew">WhatsNew</Link>
             </li>
+            <li>
+              <Link to="/DetailPage">DetailPage</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -61,8 +69,25 @@ function App() {
           exact
           render={() => <WhatsNew content={externalContent} />}
         />
+        <Route
+          path="/DetailPage/:categoryId/:productId"
+          exact
+          render={({ match }) => (
+            // getting the parameters from the url and passing
+            // down to the component as props
+            <DetailPage
+              categoryId={match.params.categoryId}
+              productId={match.params.productId}
+            />
+          )}
+        />
+        <Route path="/ReturnPolicyInfo" exact component={ReturnPolicyInfo} />
+        <Route path="/ContactUsInfo" exact component={ContactUsInfo} />
+        <Route path="/AboutUsInfo" exact component={AboutUsInfo} />
         <Route component={Error} />
+        
       </Switch>
+      <WebsiteInfoPage/>
     </Router>
   );
 }

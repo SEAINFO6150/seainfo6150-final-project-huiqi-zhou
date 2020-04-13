@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import CustomerService from "./CustomerService.jsx";
+import HShopInfo from "./HShopInfo.jsx";
+import style from "./WebsiteInfoPage.module.css";
 
 const WebsiteInfoPage = () => {
     return (
         <div>
-            <h2>About Us</h2>
-            <p>We are thhe best company in the world</p>
-            <h2>Contact Us</h2>
-            <p>Contact information here</p>
-            <h2>Return policy</h2>
-            <p>Policy here</p>
+            <hr/>
+            <div className={style.infogrid}>
+            <CustomerService/>
+            <HShopInfo/>
+            </div>
         </div>
     )
 }

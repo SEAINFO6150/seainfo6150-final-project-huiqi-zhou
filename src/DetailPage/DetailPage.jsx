@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DetailPage = () => {
+const DetailPage = (props) => {
     return (
         <div>
-            This is detail page
+            The detail page with categoryId of {props.categoryId} and productId of {props.productId}
         </div>
     )
 }
