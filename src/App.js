@@ -12,6 +12,7 @@ import ReturnPolicyInfo from "./WebsiteInfoPage/ReturnPolicyInfo.jsx"
 import ContactUsInfo from "./WebsiteInfoPage/ContactUsInfo.jsx"
 import AboutUsInfo from "./WebsiteInfoPage/AboutUsInfo.jsx"
 import Checkout from "./Checkout/Checkout.jsx"
+import Form from "./Form/Form.jsx"
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -82,10 +83,22 @@ function App() {
             />
           )}
         />
+        <Route
+          path="/Checkout/:categoryId/:productId"
+          exact
+          render={({ match }) => (
+            // getting the parameters from the url and passing
+            // down to the component as props
+            <Checkout
+              categoryId={match.params.categoryId}
+              productId={match.params.productId}
+            />
+          )}
+        />
         <Route path="/ReturnPolicyInfo" exact component={ReturnPolicyInfo} />
         <Route path="/ContactUsInfo" exact component={ContactUsInfo} />
         <Route path="/AboutUsInfo" exact component={AboutUsInfo} />
-        <Route path="/Checkout" exact component={Checkout} />
+        <Route path="/Form" exact component={Form} />
         <Route component={Error} />
         
       </Switch>

@@ -1,0 +1,83 @@
+{
+    "Blueblazer": {
+      "productName": "Blueblazer",
+      "category": "clothing",
+      "text": "this is a blazer",
+      "price": "100",
+      "image": {
+        "_url": "/images/blueblazer.jpg"
+      }
+    },
+    "Begieblazer": {
+        "productName": "Begieblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/begieblazer.jpg"
+        }
+      },
+    "Item3": {
+        "productName": "blue jacket",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/bluejacket.jpg"
+        }
+      },
+    "Item4": {
+        "productName": "flower dress",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/flowerdress.jpg"
+        }
+      },
+    "Item5": {
+        "productName": "white dress",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/whitedress.jpg"
+        }
+      },
+    "Item6": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      },
+    "Item7": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      },
+    "Item8": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      },
+    "Item9": {
+        "productName": "Blueblazer",
+        "category": "clothing",
+        "text": "this is a blazer",
+        "price": "100",
+        "image": {
+          "_url": "/images/blueblazer.jpg"
+        }
+      }
+}

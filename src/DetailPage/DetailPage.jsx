@@ -1,21 +1,26 @@
 import React from 'react'
 import Image from "./Image";
 import DetailInfo from "./DetailInfo.jsx";
-import CheckoutButton from "./CheckoutButton.jsx";
+import CheckoutButton from "./CheckoutButton"
 import style from "./DetailPage.module.css";
+import ProductsData from "../Data/products.json";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const DetailPage = (props) => {
-    var imagelink1 = "/images/";
-    var imagelink2 = props.productId
-    var imagelink = imagelink1 + imagelink2 + ".jpg"
+    var propertyName = props.productId
+    var productObject = ProductsData[propertyName]
+    var imagelink = productObject.image._url;
+    var productName = productObject.productName
+    var price = productObject.price
+    var text = productObject.text
     var categoryValue = props.categoryId
+    var checkoutLink = "/Checkout/" + categoryValue + "/" + propertyName
     return (
         
-        <div className={style.articlegrid}>
+        <div className={style.grid}>
             <Image imageLink={imagelink} category={categoryValue}/>
-            <DetailInfo productName={imagelink2} text="this is god/"/>
-            <Link to="/Checkout">
+            <DetailInfo productName={productName} text={text} price={price}/>
+            <Link to={checkoutLink}>
             <CheckoutButton/>
             </Link>
             
