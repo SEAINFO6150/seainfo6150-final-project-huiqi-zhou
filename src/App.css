@@ -1,0 +1,14 @@
+.title {
+    font-size: 8em;
+    color: black;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-items: center;
+}

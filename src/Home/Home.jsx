@@ -6,8 +6,6 @@ import data from "../Data/products.json";
 const Home = () => {
     return (
         <div>
-            <h1 className={style.title}>H'Shop</h1>
-            <hr/>
             <ProductList products={Object.values(data)}/>
         </div>
     )
