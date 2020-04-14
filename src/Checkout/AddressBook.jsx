@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import style from "./Checkout.module.css";
 
 export default class AdressBook extends Component {
   constructor(props) {
@@ -19,8 +20,10 @@ export default class AdressBook extends Component {
       <div>Your Adress Information was {this.state.submittedForm.get("myText")}</div>
     ) : (
       <form onSubmit={this.onSubmit}>
-        <input type="text" name="myText" />
-        <input type="submit" value="Send it" />
+        <label for="myText">Enter Address</label>
+        <input className={style.input} type="text" name="myText" />
+        <br/>
+        <input className={style.submit}type="submit" value="PROCEED TO CHECKOUT" />
       </form>
     );
   }
