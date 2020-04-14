@@ -27,7 +27,7 @@ function App() {
   return (
     
     <Router>
-      <h1 className="title">H'Shop</h1>
+      <h1 className="app">H'Shop</h1>
       <header>
         <nav>
           <ul className="grid">
