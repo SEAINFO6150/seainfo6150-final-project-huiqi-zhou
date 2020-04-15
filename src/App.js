@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import EditorSelect from "./EditorSelect/EditorSelect.jsx";
 import Bar from "./Bar/Bar.jsx";
-import WhatsNew from "./WhatsNew/WhatsNew.jsx";
 import Error from "./Error/Error.jsx";
 import DetailPage from "./DetailPage/DetailPage.jsx";
 import WebsiteInfoPage from "./WebsiteInfoPage/WebsiteInfoPage.jsx"
@@ -27,7 +26,7 @@ function App() {
   return (
     
     <Router>
-      <h1 className="app">H'Shop</h1>
+      <h1 className="title">H'Shop</h1>
       <header>
         <nav>
           <ul className="grid">
@@ -37,9 +36,6 @@ function App() {
             </ul>
             <ul>
               <Link to="/EditorSelect">EditorSelect</Link>
-            </ul>
-            <ul>
-              <Link to="/WhatsNew">WhatsNew</Link>
             </ul>
           </ul>
         </nav>
@@ -62,11 +58,6 @@ function App() {
               productId={match.params.productId}
             />
           )}
-        />
-        <Route
-          path="/WhatsNew"
-          exact
-          render={() => <WhatsNew content={externalContent} />}
         />
         <Route
           path="/DetailPage/:categoryId/:productId"
