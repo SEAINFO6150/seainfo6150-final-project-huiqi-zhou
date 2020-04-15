@@ -26,10 +26,11 @@ function App() {
   return (
     
     <Router>
-      <h1 className="title">H'Shop</h1>
+      
       <header>
+      <h1>H'Shop</h1>
         <nav>
-          <ul className="grid">
+          <ul>
             {/* these links should show you how to connect up a link to a specific route */}
             <ul>
               <Link to="/">Home</Link>

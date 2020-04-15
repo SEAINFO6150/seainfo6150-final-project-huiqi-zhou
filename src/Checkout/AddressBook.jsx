@@ -78,7 +78,7 @@ handleChangePhoneNumber = event => {
       <form onSubmit={this.onSubmit}>
         <div>
             <label for="myFirstName">Fist Name</label>
-            <input className={style.input} type="text" name="myFirstName" placeholder="required" value={this.state.firstName} onChange={this.handleChangeFirstName}/>
+            <input className={style.input} type="text" name="myFirstName" placeholder="First Name can not be blank" value={this.state.firstName} onChange={this.handleChangeFirstName}/>
         </div>
         <div className={style.error}>
             {this.state.nameError}
@@ -86,7 +86,7 @@ handleChangePhoneNumber = event => {
         <label for="myLastName">Last Name</label>
         <input className={style.input} type="text" name="myLastName" />
         <label for="myEmail">Email</label>
-        <input className={style.input} type="text" name="myEmail" placeholder="required" value={this.state.email} onChange={this.handleChangeEmail}/>
+        <input className={style.input} type="text" name="myEmail" placeholder="valid email: abc\@example.com" value={this.state.email} onChange={this.handleChangeEmail}/>
         <div className={style.error}>
             {this.state.emailError}
         </div>
@@ -96,7 +96,7 @@ handleChangePhoneNumber = event => {
             {this.state.phoneError}
         </div>
         <label for="myAdress">Enter Address</label>
-        <input className={style.input} type="text" name="myAdress" placeholder="required"/>
+        <input className={style.input} type="text" name="myAdress" placeholder="phone number should be all digits"/>
 
         <label  for="state">State</label>
         <select className={style.select} id="state" name="state">
@@ -111,6 +111,9 @@ handleChangePhoneNumber = event => {
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
         </select>
+        <label>Agree to receive email from us</label>
+        <input type="checkbox" />
+        <label>Agree our policy</label>
         <input type="checkbox" />
         <input className={style.submit} type="submit" value="PROCEED TO CHECKOUT" />
       </form>
