@@ -16,14 +16,17 @@ const DetailPage = (props) => {
     var categoryValue = props.categoryId
     var checkoutLink = "/Checkout/" + categoryValue + "/" + propertyName
     return (
-        
-        <div className={style.grid}>
-            <Image imageLink={imagelink} category={categoryValue}/>
-            <DetailInfo productName={productName} text={text} price={price}/>
-            <Link to={checkoutLink}>
-            <CheckoutButton/>
-            </Link>
-            
+        <div>
+            <h1 className={style.title}>ProductDetail</h1>
+            <hr/>
+            <div className={style.grid}>
+                <Image imageLink={imagelink} category={categoryValue}/>
+                <DetailInfo productName={productName} text={text} price={price}/>
+                <Link to={checkoutLink}>
+                <CheckoutButton/>
+                </Link>
+                
+            </div>
         </div>
     )
 }

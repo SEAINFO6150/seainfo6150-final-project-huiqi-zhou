@@ -12,9 +12,14 @@ const Checkout = (props) => {
     var productName = productObject.productName
     var category = productObject.category
     return (
+        <div>
+            <h1 className={style.title}>Checkout</h1>
+            <hr/>
+        
         <div className={style.grid}>
         <CheckoutItem imageLink={imageLink} alt={category} productName={productName} price={price}/>
         <AddressBook/>
+        </div>
         </div>
     )
 }
