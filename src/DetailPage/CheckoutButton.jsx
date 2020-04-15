@@ -1,8 +1,9 @@
 import React from 'react';
+import style from "./DetailPage.module.css";
 
 const CheckoutButton = () => {
     return (
-        <button>checkout</button>
+        <button className={style.button}>checkout</button>
     )
 }
 

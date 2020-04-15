@@ -2,8 +2,8 @@
     "Blueblazer": {
       "productName": "Blueblazer",
       "category": "clothing",
-      "text": "this is a blazer",
-      "price": "100",
+      "text": "We’ve joined forces with ethical agency Good On You to give you the power to choose positively. This piece is from a brand that scores well on their key criteria.",
+      "price": "$100",
       "image": {
         "_url": "/images/blueblazer.jpg"
       }
@@ -11,73 +11,73 @@
     "Begieblazer": {
         "productName": "Begieblazer",
         "category": "clothing",
-        "text": "this is a blazer",
-        "price": "100",
+        "text": " Low Classic's breathable blazer ensures you can look nice and sharp at your meetings no matter the season. Business as usual. Featuring notched lapels, a button fastening and patch pockets.",
+        "price": "$319",
         "image": {
           "_url": "/images/begieblazer.jpg"
         }
       },
-    "Item3": {
-        "productName": "blue jacket",
+    "BlueJacket": {
+        "productName": "BlueJacket",
         "category": "clothing",
-        "text": "this is a blazer",
-        "price": "100",
+        "text": " a notched collar, long sleeves, a front button fastening, a chest pocket, front flap pockets and a loose fit.",
+        "price": "$299",
         "image": {
           "_url": "/images/bluejacket.jpg"
         }
       },
-    "Item4": {
-        "productName": "flower dress",
+    "FlowerDress": {
+        "productName": "FlowerDress",
         "category": "clothing",
-        "text": "this is a blazer",
-        "price": "100",
+        "text": "It uses eco-friendly materials in its products, renewable energy for its supply chain, and reuses all its textile offcuts. It traces most of its supply chain to ensure good labour standards and visits suppliers regularly..",
+        "price": "$188",
         "image": {
           "_url": "/images/flowerdress.jpg"
         }
       },
-    "Item5": {
-        "productName": "white dress",
+    "WhiteDress": {
+        "productName": "WhiteDress",
         "category": "clothing",
-        "text": "this is a blazer",
-        "price": "100",
+        "text": "Featuring a frill trim, a v-neck, front decorative buttons, a relaxed fit, a mid-calf length, a ruffle trimming, short sleeves, and a back zip fastening.",
+        "price": "$448",
         "image": {
           "_url": "/images/whitedress.jpg"
         }
       },
-    "Item6": {
-        "productName": "Blueblazer",
+    "GreenDress": {
+        "productName": "GreenDress",
         "category": "clothing",
         "text": "this is a blazer",
-        "price": "100",
+        "price": "$22",
         "image": {
-          "_url": "/images/blueblazer.jpg"
+          "_url": "/images/greendress.jpg"
         }
       },
-    "Item7": {
-        "productName": "Blueblazer",
+    "Blueshirt": {
+        "productName": "Blueshirt",
         "category": "clothing",
         "text": "this is a blazer",
-        "price": "100",
+        "price": "$99",
         "image": {
-          "_url": "/images/blueblazer.jpg"
+          "_url": "/images/blueshirt.jpg"
         }
       },
-    "Item8": {
-        "productName": "Blueblazer",
+    "WhiteBag": {
+        "productName": "WhiteBag",
         "category": "clothing",
         "text": "this is a blazer",
-        "price": "100",
+        "price": "$322",
         "image": {
-          "_url": "/images/blueblazer.jpg"
+          "_url": "/images/whitebag.jpg"
         }
       },
-    "Item9": {
-        "productName": "Blueblazer",
+    "Blacktop": {
+        "productName": "Blacktop",
         "category": "clothing",
         "text": "this is a blazer",
-        "price": "100",
+        "price": "$10",
         "image": {
-          "_url": "/images/blueblazer.jpg"
+          "_url": "/images/blacktop.jpg"
         }
       }
 }

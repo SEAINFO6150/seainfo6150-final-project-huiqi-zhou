@@ -1,6 +1,18 @@
-.title {
-    font-size: 8em;
+.info {
+    font-size: 2em;
     color: black;
+    text-align: center;
+}
+
+.priceinfo {
+    font-size: 2em;
+    color:gray;
+    text-align: center;
+}
+
+.text {
+    font-size: 1em;
+    color:gray;
     text-align: center;
 }
 
@@ -13,4 +25,16 @@
 
 .griditem{
     text-align: match;
+}
+
+.button{
+    width: 100%;
+  background-color:black;
+  color: white;
+  font-size: large;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
