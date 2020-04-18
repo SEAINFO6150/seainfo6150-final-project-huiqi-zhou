@@ -2,7 +2,7 @@ import React from 'react'
 import CheckoutItem from "./CheckoutItem";
 import AddressBook from "./AddressBook";
 import ProductsData from "../Data/products.json";
-import style from "./Checkout.module.css";
+import style from "./Checkout.Module.css";
 
 const Checkout = (props) => {
     var property = props.productId
