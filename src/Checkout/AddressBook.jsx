@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import style from "./Checkout.module.css";
+import style from "./Checkout.Module.css";
 
 const initialState = {
     submittedForm: null,
