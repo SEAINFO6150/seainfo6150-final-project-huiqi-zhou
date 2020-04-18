@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "./Checkout.module.css";
+import style from "./Checkout.Module.css";
 
 const CheckoutItem = ({imageLink, category, productName, price}) => {
     return (
